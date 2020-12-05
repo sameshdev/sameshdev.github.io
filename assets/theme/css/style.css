@@ -72,7 +72,8 @@ a {
   cursor: pointer;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -131,7 +132,10 @@ blockquote {
   border-color: #ff3366;
 }
 
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   transition-delay: 9999s;
   transition-property: background-color, color;
 }
@@ -333,9 +337,9 @@ figure[mbr-media-size] {
   border-width: 2px;
   font-style: normal;
   letter-spacing: 1px;
-  margin: .4rem .8rem;
+  margin: 0.4rem 0.8rem;
   white-space: normal;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -348,21 +352,21 @@ figure[mbr-media-size] {
 .btn-sm {
   font-weight: 500;
   letter-spacing: 1px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-md {
   font-weight: 500;
   letter-spacing: 1px;
-  margin: .4rem .8rem !important;
-  transition: all .3s ease-in-out;
+  margin: 0.4rem 0.8rem !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-lg {
   font-weight: 500;
   letter-spacing: 1px;
-  margin: .4rem .8rem !important;
-  transition: all .3s ease-in-out;
+  margin: 0.4rem 0.8rem !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .mbr-section-btn {
@@ -444,7 +448,7 @@ nav .mbr-section-btn {
   background-color: #000;
   bottom: 0;
   left: 0;
-  opacity: .5;
+  opacity: 0.5;
   position: absolute;
   right: 0;
   top: 0;
@@ -467,10 +471,11 @@ blockquote {
   color: #565656;
   line-height: 1.43;
   min-height: 3.5em;
-  padding: 1.07em .5em;
+  padding: 1.07em 0.5em;
 }
 
-.form-control, .form-control:focus {
+.form-control,
+.form-control:focus {
   border: 1px solid #e8e8e8;
 }
 
@@ -481,7 +486,7 @@ blockquote {
 .form-control-label {
   position: relative;
   cursor: pointer;
-  margin-bottom: .357em;
+  margin-bottom: 0.357em;
   padding: 0;
 }
 
@@ -489,7 +494,7 @@ blockquote {
   color: #ffffff;
   border-radius: 0;
   border: 0;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.875rem;
   padding: 1.25rem;
@@ -499,7 +504,7 @@ blockquote {
 .alert.alert-form::after {
   background-color: inherit;
   bottom: -7px;
-  content: "";
+  content: '';
   display: block;
   height: 14px;
   left: 50%;
@@ -669,12 +674,12 @@ blockquote {
   from {
     background-position: 0% 100%;
     -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
   to {
     background-position: 100% 0%;
     -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
 }
 
@@ -682,12 +687,12 @@ blockquote {
   from {
     background-position: 0% 100%;
     -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
   to {
     background-position: 100% 0%;
     -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
   }
 }
 
@@ -751,7 +756,7 @@ blockquote {
 }
 
 /* Others*/
-.note-check a[data-value=Rubik] {
+.note-check a[data-value='Rubik'] {
   font-style: normal;
 }
 
@@ -842,7 +847,7 @@ blockquote {
 
 .jq-selectbox__trigger-arrow {
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .jq-selectbox li {
@@ -1133,23 +1138,28 @@ body {
   display: none;
 }
 .engine {
-	position: absolute;
-	text-indent: -2400px;
-	text-align: center;
-	padding: 0;
-	top: 0;
-	left: -2400px;
+  position: absolute;
+  text-indent: -2400px;
+  text-align: center;
+  padding: 0;
+  top: 0;
+  left: -2400px;
 }
 
 #my-projects {
   filter: grayscale(100%);
-  opacity: 0.8;
+  transition: 300ms;
+  /* opacity: 0.8; */
 }
 
 #my-projects:hover {
   filter: grayscale(0%);
-  opacity: 0.85;
+  /* opacity: 0.85; */
 }
+
+/* #someId:hover {
+  transform: scale(2);
+} */
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -1159,7 +1169,3 @@ body {
   background: linear-gradient(transparent, #159dcc);
   border-radius: 6px;
 }
-
-
-
-
